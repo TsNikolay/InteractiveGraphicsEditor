@@ -9,7 +9,7 @@ void setup() {
   toolbar = new Toolbar();
   painter = new Painter();
   database = new Database();
-  db = new SQLite(this, "data/db.sqlite");
+  db = new SQLite(this, "../data/db.sqlite");
 }
 
 void draw() {

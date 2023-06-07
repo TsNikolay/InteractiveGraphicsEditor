@@ -15,17 +15,17 @@ class Toolbar {
        
   public Toolbar() {
     String[] toolPaths = {
-      "/shapesImages/file.jpg", 
-      "/shapesImages/new.jpg", 
-      "/shapesImages/laundry.jpg", 
-      "/shapesImages/circle.jpg", 
-      "/shapesImages/ellipse.jpg", 
-      "/shapesImages/square.jpg", 
-      "/shapesImages/rectangle.jpg", 
-      "/shapesImages/triangle.jpg", 
-      "/shapesImages/heptagon.jpg", 
-      "/shapesImages/star.jpg", 
-      "/shapesImages/arrow.jpg"
+      "../shapesImages/file.jpg", 
+      "../shapesImages/new.jpg", 
+      "../shapesImages/laundry.jpg", 
+      "../shapesImages/circle.jpg", 
+      "../shapesImages/ellipse.jpg", 
+      "../shapesImages/square.jpg", 
+      "../shapesImages/rectangle.jpg", 
+      "../shapesImages/triangle.jpg", 
+      "../shapesImages/heptagon.jpg", 
+      "../shapesImages/star.jpg", 
+      "../shapesImages/arrow.jpg"
     };
 
     for (String path : toolPaths) {
@@ -53,13 +53,13 @@ class Toolbar {
     Button additionalButton2;
    
     if (this.indexOfTool == 0) {
-      additionalButton1 = new Button(x, 100, "/shapesImages/upload.jpg");
-      additionalButton2 = new Button(x, 200, "/shapesImages/save.jpg");        
+      additionalButton1 = new Button(x, 100, "../shapesImages/upload.jpg");
+      additionalButton2 = new Button(x, 200, "../shapesImages/save.jpg");        
     } else if (this.indexOfTool == 1 || this.indexOfTool == 2) {
       return;            
     } else {        
-      additionalButton1 = new Button(x, 100, "/shapesImages/color.jpg");
-      additionalButton2 = new Button(x, 200, "/shapesImages/type.jpg");        
+      additionalButton1 = new Button(x, 100, "../shapesImages/color.jpg");
+      additionalButton2 = new Button(x, 200, "../shapesImages/type.jpg");        
     }
     additionalTools.add(additionalButton1);
     additionalTools.add(additionalButton2);
@@ -81,9 +81,9 @@ class Toolbar {
       int increment = (indexOfTool <= 5) ? 100 : -100;
 
       if (indexOfAdditionalTool == 0) {
-        paths = new String[]{"/shapesImages/red.jpg", "/shapesImages/blue.jpg", "/shapesImages/green.jpg", "/shapesImages/yellow.jpg", "/shapesImages/black.jpg"};
+        paths = new String[]{"../shapesImages/red.jpg", "../shapesImages/blue.jpg", "../shapesImages/green.jpg", "../shapesImages/yellow.jpg", "../shapesImages/black.jpg"};
       } else {
-        paths = new String[]{"/shapesImages/thinBrash.jpg", "/shapesImages/mediumBrash.jpg", "/shapesImages/bigBrash.jpg"};
+        paths = new String[]{"../shapesImages/thinBrash.jpg", "../shapesImages/mediumBrash.jpg", "../shapesImages/bigBrash.jpg"};
       }
 
       for (int i = 0; i < paths.length; i++) {
